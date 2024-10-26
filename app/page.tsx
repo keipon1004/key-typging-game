@@ -7,7 +7,7 @@ interface Question {
 }
 
 async function fetchQuestions(): Promise<Question[]> {
-  const res = await fetch('http://localhost:3000/api/question', {
+  const res = await fetch('https://key-typging-game.vercel.app/api/question', {
     cache: 'no-store', // キャッシュを無効にするオプション
   });
   if (!res.ok) {
